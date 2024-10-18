@@ -1,0 +1,246 @@
+body {
+  /*Style*/
+  background-color: #ffffff;
+}
+
+/*HEADER*/
+.hd_bck {
+  /*Position*/
+  position: absolute;
+  left: 17px;
+  z-index: 1;
+}
+
+.fa-arrow-left {
+  /*Dimensions*/
+  font-size: 16px;
+
+  /*Style*/
+  color: #000000;
+}
+
+/*MAIN*/
+main {
+  /*Dimensions*/
+  width: 100%;
+}
+
+.img_ctn {
+  /*Position*/
+  z-index: -2;
+
+  /*Dimensions*/
+  width: 100%;
+  height: 383px;
+}
+
+.img_ctn img {
+  /*Dimensions*/
+  object-fit: cover;
+  width: 100%;
+  height: 383px;
+}
+
+.menu_ctn {
+  /*Position*/
+  position: relative;
+
+  /*Dimensions*/
+  width: 100%;
+
+  /*Flex*/
+  gap: 40px;
+}
+
+.titre_ctn {
+  /*Flex*/
+  gap: 24px;
+}
+
+.titre_ctn span {
+  /*Texte*/
+  font-size: 28px;
+  color: #000000;
+  font-family: "Shrikhand";
+  font-weight: 400;
+}
+
+.sct_menu {
+  /*Dimensions*/
+  width: 634px;
+
+  /*Flex*/
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sct_title {
+  /*Position*/
+  position: relative;
+
+  /*Dimensions*/
+  width: 275px;
+  height: 27px;
+
+  /*Texte*/
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.sct_title::after {
+  /*Position*/
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  /*Dimensions*/
+  width: 40px;
+  height: 6px;
+
+  /*Style*/
+  background-color: var(--ter);
+
+  /*Autre*/
+  content: "";
+}
+
+.plat {
+  /*Position*/
+  position: relative;
+
+  /*Dimensions*/
+  height: 69px;
+
+  /*Style*/
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.15);
+  cursor: pointer;
+
+  /*Autre*/
+  overflow: hidden;
+  opacity: 0;
+}
+
+.check {
+  /*Position*/
+  position: absolute;
+  right: -40px;
+  top: 0px;
+
+  /*Dimensions*/
+  height: 30px;
+  width: 30px;
+
+  /*Style*/
+  background: linear-gradient(to bottom right, var(--scd), var(--prm));
+  border-bottom-left-radius: 15px;
+  color: #ffffff;
+
+  /*Animation*/
+  transition: 0.5s;
+}
+
+.plat:hover > .check {
+  /*Position*/
+  right: 0px;
+}
+
+.plt_txt {
+  /*Position*/
+  padding: 15px;
+  margin-right: auto;
+
+  /*Dimensions*/
+  max-width: 550px;
+
+  /*Flex*/
+  display: flex;
+  gap: 5px;
+}
+
+.plt_title {
+  /*Texte*/
+  font-size: 18px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.plt_desc {
+  /*Texte*/
+  font-size: 15px;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.plt_price {
+  /*Position*/
+  padding: 15px;
+
+  /*Dimensions*/
+  height: 39px;
+
+  /*Flex*/
+  display: flex;
+  align-items: end;
+
+  /*Texte*/
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.menu_ctn button {
+  /*Dimensions*/
+  width: 186px;
+  height: 50px;
+}
+
+.menu_bg {
+  /*Position*/
+  position: absolute;
+  z-index: -1;
+  top: -30px;
+  bottom: -40px;
+
+  /*Dimensions*/
+  width: 100%;
+  max-width: 1055px;
+
+  /*Style*/
+  background-color: var(--lgt-gry);
+  border-radius: 30px 30px 0px 0px;
+}
+
+/*FOOTER*/
+.ftr_menu {
+  /*Position*/
+  margin-top: 40px;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .img_ctn {
+    /*Dimensions*/
+    height: 275px;
+  }
+
+  .img_ctn img {
+    /*Dimensions*/
+    height: 275px;
+  }
+
+  .sct_menu {
+    /*Dimensions*/
+    width: 349px;
+  }
+
+  .plt_txt {
+    /*Dimensions*/
+    max-width: 260px;
+  }
+}

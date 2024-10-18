@@ -1,0 +1,127 @@
+body {
+  /*Style*/
+  background-color: var(--nml-gry);
+}
+
+.ctn {
+  /*Position*/
+  position: absolute;
+  /*Dimensions*/
+  width: 100vw;
+  height: 100vh;
+  /*Flex*/
+  gap: 20px;
+}
+
+.ctn span {
+  /*Texte*/
+  font-size: 30px;
+}
+
+.loading_ctn {
+  /*Position*/
+  position: relative;
+  /*Dimensions*/
+  height: 140px;
+  width: 140px;
+  /*Style*/
+  border-radius: 70px;
+  background: linear-gradient(to bottom right, var(--scd), var(--prm));
+}
+
+.lot1,
+.lot2 {
+  /*Position*/
+  position: absolute;
+  /*Dimensions*/
+  width: 100%;
+  height: 100%;
+}
+
+.lot2 {
+  /*Position*/
+  transform: rotate(180deg);
+}
+
+svg {
+  /*Position*/
+  position: absolute;
+  /*Autre*/
+  overflow: visible;
+}
+
+.svg1 {
+  /*Dimensions*/
+  width: 120px;
+  height: 120px;
+  /*Animation*/
+  animation: loading1 2000ms infinite;
+}
+
+.svg2 {
+  /*Dimensions*/
+  width: 90px;
+  height: 90px;
+  /*Animation*/
+  animation: loading2 2000ms infinite;
+}
+
+.svg3 {
+  /*Dimensions*/
+  width: 60px;
+  height: 60px;
+  /*Animation*/
+  animation: loading3 2000ms infinite;
+}
+
+circle {
+  /*Cercle*/
+  fill: none;
+  stroke-width: 7px;
+  stroke-linecap: round;
+  stroke: var(--nml-gry);
+}
+
+.circle1 {
+  /*Cercle*/
+  stroke-dasharray: 700;
+  stroke-dashoffset: 605;
+}
+
+.circle2 {
+  /*Cercle*/
+  stroke-dasharray: 600;
+  stroke-dashoffset: 530;
+}
+
+.circle3 {
+  /*Cercle*/
+  stroke-dasharray: 500;
+  stroke-dashoffset: 455;
+}
+
+/*ANIMATION*/
+@keyframes loading1 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes loading2 {
+  0% {
+    transform: rotate(720deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes loading3 {
+  0% {
+    transform: rotate(1080deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}/*# sourceMappingURL=Loading.css.map */

@@ -1,0 +1,221 @@
+/*HEADER*/
+.localisation {
+  /*Dimensions*/
+  height: 50px;
+  width: 100%;
+
+  /*Flex*/
+  gap: 17px;
+
+  /*Style*/
+  background-color: var(--nml-gry);
+}
+
+.hp_ctn,
+.hp_main {
+  /*Dimensions*/
+  width: 100%;
+
+  /*Flex*/
+  gap: 30px;
+}
+
+/*HERO*/
+.hero,
+.hero_txt {
+  /*Flex*/
+  gap: 30px;
+}
+
+.hero {
+  /*Dimensions*/
+  max-width: 645px;
+  min-height: 179px;
+  padding: 0px 15px 0px 15px;
+}
+
+/*FONCTIONNEMENT*/
+.fonctionnement {
+  /*Dimensions*/
+  width: 100%;
+
+  /*Style*/
+  background-color: #ffffff;
+}
+
+.fct_ctn {
+  /*Dimensions*/
+  padding: 50px 15px 50px 15px;
+
+  /*Flex*/
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.step_ctn {
+  /*Flex*/
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+.step {
+  /*Position*/
+  position: relative;
+
+  /*Dimensions*/
+  height: 72.38px;
+  width: 311px;
+  padding-left: 12px;
+  margin-left: 12px;
+
+  /*Style*/
+  background-color: var(--lgt-gry);
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgb(0, 0, 0, 0.15);
+}
+
+.step_nb {
+  /*Position*/
+  position: absolute;
+  left: -12px;
+
+  /*Dimesions*/
+  width: 24px;
+  height: 24px;
+
+  /*Style*/
+  border-radius: 12px;
+  color: #ffffff;
+  background-color: var(--prm);
+}
+
+.step_icon {
+  /*Position*/
+  position: absolute;
+  left: 40px;
+}
+
+.fa-mobile-screen-button {
+  /*Dimensions*/
+  font-size: 20px;
+}
+
+.fa-list-ul {
+  /*Dimensions*/
+  font-size: 16px;
+}
+
+.fa-store {
+  /*Dimensions*/
+  font-size: 18px;
+
+  /*Style*/
+  color: var(--prm);
+}
+
+.step_txt {
+  /*Position*/
+  position: absolute;
+  left: 85px;
+}
+
+/*RESTAURANT*/
+.restaurants {
+  /*Flex*/
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 1070px;
+  padding: 0 15px;
+}
+
+.rst_cards {
+  /*Flex*/
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.card {
+  /*Position*/
+  position: relative;
+
+  /*Dimensions*/
+  width: 490px;
+  height: 251px;
+
+  /*Style*/
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card_img {
+  /*Position*/
+  position: relative;
+  top: -57px;
+
+  /*Dimensions*/
+  object-fit: cover;
+  width: 100%;
+  height: 251px;
+}
+
+.card_bottom_ctn {
+  /*Position*/
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 0 20px;
+
+  /*Dimensions*/
+  height: 57px;
+
+  /*Style*/
+  color: #000000;
+}
+
+.card_txt_ctn {
+  /*Position*/
+  margin-right: auto;
+}
+
+.card_new {
+  /*Position*/
+  position: absolute;
+  top: 13px;
+  right: 13px;
+
+  /*Dimensions*/
+  height: 29px;
+  width: 80px;
+
+  /*Style*/
+  background-color: var(--ter);
+  box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.15);
+  border-radius: 2px;
+
+  /*Texte*/
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .localisation {
+    /*Style*/
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+  }
+
+  .hero_txt {
+    /*Flex*/
+    gap: 15px;
+  }
+
+  .card {
+    /*Dimensions*/
+    width: 340px;
+  }
+}
