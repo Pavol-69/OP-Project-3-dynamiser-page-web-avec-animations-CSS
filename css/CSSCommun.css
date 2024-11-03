@@ -89,6 +89,9 @@ h6 {
 }
 
 button {
+  /*Position*/
+  position: relative;
+
   /*Dimensions*/
   height: 50px;
   padding: 0 25px;
@@ -104,6 +107,26 @@ button {
   color: #ffffff;
   box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.25);
   cursor: pointer;
+  overflow: hidden;
+
+  /*Animation*/
+  transition: 0.5s;
+}
+
+button::after {
+  /*Position*/
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  /*Content*/
+  content: "";
+
+  /*Style*/
+  background-color: #ffffff;
+  opacity: 0%;
 
   /*Animation*/
   transition: 0.5s;
@@ -111,8 +134,12 @@ button {
 
 button:hover {
   /*Style*/
-  filter: brightness(1.05);
-  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 15px rgb(0, 0, 0, 0.35);
+}
+
+button:hover:after {
+  /*Style*/
+  opacity: 15%;
 }
 
 .heart_ctn {
@@ -140,7 +167,7 @@ button:hover {
   font-size: 0px;
 
   /*Style*/
-  background: linear-gradient(var(--scd), var(--prm));
+  background: linear-gradient(var(--prm), var(--scd));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 

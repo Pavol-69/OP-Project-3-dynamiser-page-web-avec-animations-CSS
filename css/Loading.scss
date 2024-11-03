@@ -56,31 +56,17 @@ svg {
   overflow: visible;
 }
 
-.svg1 {
-  /*Dimensions*/
-  width: 120px;
-  height: 120px;
+.svg {
+  @for $i from 1 through 3 {
+    &#{$i} {
+      /*Dimensions*/
+      width: (5-$i) * 30px;
+      height: (5-$i) * 30px;
 
-  /*Animation*/
-  animation: loading1 2000ms infinite;
-}
-
-.svg2 {
-  /*Dimensions*/
-  width: 90px;
-  height: 90px;
-
-  /*Animation*/
-  animation: loading2 2000ms infinite;
-}
-
-.svg3 {
-  /*Dimensions*/
-  width: 60px;
-  height: 60px;
-
-  /*Animation*/
-  animation: loading3 2000ms infinite;
+      /*Animation*/
+      animation: loading + $i 2000ms infinite;
+    }
+  }
 }
 
 circle {
@@ -91,22 +77,14 @@ circle {
   stroke: var(--nml-gry);
 }
 
-.circle1 {
-  /*Cercle*/
-  stroke-dasharray: 700;
-  stroke-dashoffset: 605;
-}
-
-.circle2 {
-  /*Cercle*/
-  stroke-dasharray: 600;
-  stroke-dashoffset: 530;
-}
-
-.circle3 {
-  /*Cercle*/
-  stroke-dasharray: 500;
-  stroke-dashoffset: 455;
+.circle {
+  @for $i from 1 through 3 {
+    &#{$i} {
+      /*Cercle*/
+      stroke-dasharray: 800 - $i * 100;
+      stroke-dashoffset: 680 - $i * 75;
+    }
+  }
 }
 
 /*ANIMATION*/

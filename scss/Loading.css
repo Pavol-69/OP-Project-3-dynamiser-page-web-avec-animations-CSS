@@ -57,7 +57,6 @@ svg {
   /*Animation*/
   animation: loading1 2000ms infinite;
 }
-
 .svg2 {
   /*Dimensions*/
   width: 90px;
@@ -65,7 +64,6 @@ svg {
   /*Animation*/
   animation: loading2 2000ms infinite;
 }
-
 .svg3 {
   /*Dimensions*/
   width: 60px;
@@ -87,13 +85,11 @@ circle {
   stroke-dasharray: 700;
   stroke-dashoffset: 605;
 }
-
 .circle2 {
   /*Cercle*/
   stroke-dasharray: 600;
   stroke-dashoffset: 530;
 }
-
 .circle3 {
   /*Cercle*/
   stroke-dasharray: 500;

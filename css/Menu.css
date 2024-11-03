@@ -121,25 +121,34 @@ main {
   /*Autre*/
   overflow: hidden;
   opacity: 0;
+
+  /*Flex*/
+  display: flex;
+  justify-content: space-between;
 }
 
 .check {
   /*Position*/
   position: absolute;
-  right: -40px;
+  right: -59px;
   top: 0px;
 
   /*Dimensions*/
-  height: 30px;
-  width: 30px;
+  height: 100%;
+  width: 59px;
 
   /*Style*/
-  background: linear-gradient(to bottom right, var(--scd), var(--prm));
-  border-bottom-left-radius: 15px;
+  font-size: 20px;
+  background-color: var(--ter);
   color: #ffffff;
 
   /*Animation*/
   transition: 0.5s;
+}
+
+.plat:hover {
+  /*Flex*/
+  gap: 6px;
 }
 
 .plat:hover > .check {
@@ -149,15 +158,15 @@ main {
 
 .plt_txt {
   /*Position*/
-  padding: 15px;
-  margin-right: auto;
-
-  /*Dimensions*/
-  max-width: 550px;
+  padding: 15px 0px 15px 15px;
 
   /*Flex*/
   display: flex;
   gap: 5px;
+  flex: 1 0 0;
+
+  /*Style*/
+  overflow: hidden;
 }
 
 .plt_title {
@@ -180,7 +189,7 @@ main {
 
 .plt_price {
   /*Position*/
-  padding: 15px;
+  padding: 15px 15px 15px 0px;
 
   /*Dimensions*/
   height: 39px;
@@ -192,6 +201,20 @@ main {
   /*Texte*/
   font-size: 15px;
   font-weight: 700;
+}
+
+.check_space {
+  /*Dimensions*/
+  height: 100%;
+  width: 0px;
+
+  /*Animation*/
+  transition: 0.5s;
+}
+
+.plat:hover > .check_space {
+  /*Dimensions*/
+  width: 59px;
 }
 
 .menu_ctn button {
@@ -237,10 +260,5 @@ main {
   .sct_menu {
     /*Dimensions*/
     width: 349px;
-  }
-
-  .plt_txt {
-    /*Dimensions*/
-    max-width: 260px;
   }
 }
