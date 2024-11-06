@@ -31,14 +31,14 @@ main {
 
   /*Dimensions*/
   width: 100%;
-  height: 383px;
+  height: 275px;
 }
 
 .img_ctn img {
   /*Dimensions*/
   object-fit: cover;
   width: 100%;
-  height: 383px;
+  height: 275px;
 }
 
 .menu_ctn {
@@ -67,7 +67,7 @@ main {
 
 .sct_menu {
   /*Dimensions*/
-  width: 634px;
+  width: 349px;
 
   /*Flex*/
   display: flex;
@@ -245,20 +245,16 @@ main {
   margin-top: 40px;
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-  .img_ctn {
-    /*Dimensions*/
-    height: 275px;
-  }
-
+/* Big devices (bigger than phones, more than 768px) */
+@media (min-width: 767.98px) {
+  .img_ctn,
   .img_ctn img {
     /*Dimensions*/
-    height: 275px;
+    height: 383px;
   }
 
   .sct_menu {
     /*Dimensions*/
-    width: 349px;
+    width: 634px;
   }
 }
