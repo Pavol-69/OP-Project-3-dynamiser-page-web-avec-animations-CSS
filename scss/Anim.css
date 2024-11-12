@@ -1,51 +1,51 @@
 .anim1 {
   animation: opening 500ms ease-in;
-  animation-delay: 0ms;
+  animation-delay: 2000ms;
   animation-fill-mode: forwards;
 }
 .anim2 {
   animation: opening 500ms ease-in;
-  animation-delay: 200ms;
+  animation-delay: 2200ms;
   animation-fill-mode: forwards;
 }
 .anim3 {
   animation: opening 500ms ease-in;
-  animation-delay: 400ms;
+  animation-delay: 2400ms;
   animation-fill-mode: forwards;
 }
 .anim4 {
   animation: opening 500ms ease-in;
-  animation-delay: 600ms;
+  animation-delay: 2600ms;
   animation-fill-mode: forwards;
 }
 .anim5 {
   animation: opening 500ms ease-in;
-  animation-delay: 800ms;
+  animation-delay: 2800ms;
   animation-fill-mode: forwards;
 }
 .anim6 {
   animation: opening 500ms ease-in;
-  animation-delay: 1000ms;
+  animation-delay: 3000ms;
   animation-fill-mode: forwards;
 }
 .anim7 {
   animation: opening 500ms ease-in;
-  animation-delay: 1200ms;
+  animation-delay: 3200ms;
   animation-fill-mode: forwards;
 }
 .anim8 {
   animation: opening 500ms ease-in;
-  animation-delay: 1400ms;
+  animation-delay: 3400ms;
   animation-fill-mode: forwards;
 }
 .anim9 {
   animation: opening 500ms ease-in;
-  animation-delay: 1600ms;
+  animation-delay: 3600ms;
   animation-fill-mode: forwards;
 }
 .anim10 {
   animation: opening 500ms ease-in;
-  animation-delay: 1800ms;
+  animation-delay: 3800ms;
   animation-fill-mode: forwards;
 }
 

@@ -2,7 +2,7 @@
   @for $i from 1 through 10 {
     &#{$i} {
       animation: opening 500ms ease-in;
-      animation-delay: ($i - 1) * 200ms;
+      animation-delay: 2000 + ($i - 1) * 200ms;
       animation-fill-mode: forwards;
     }
   }
